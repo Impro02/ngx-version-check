@@ -91,14 +91,8 @@ readDir(`${basePath}`)
     .then(() => {
         // main bundle file not found, dev build?
         if (!mainBundleFile) {
-        console.log('Main bundle not found, exiting...')
-        return
-        }
-
-        // Write the hash and version to the main.js file if it is present
-        if (mainBundleFile) {
-        console.log(`Replacing hash in the ${mainBundleFile}`)
-
+            console.log('Main bundle not found, exiting...')
+            return
         }
 
         console.log('End post build [ngx-version-check]\n')
