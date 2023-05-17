@@ -42,6 +42,9 @@ export class VersionCheckService {
 
                 // Stop checking for a new version if a new version is already available
                 if (this.newVersionAvailable) {
+                    this._currentDate = response.date;
+                    this._currentHash = response.hash;
+
                     this.stopVersionChecking();
 
                     // Call the consuming client's notification method if one exists
