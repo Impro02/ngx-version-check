@@ -1,6 +1,6 @@
 {
   "name": "ngx-version-checker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Check app version by build hash",
   "main": "index.js",
   "scripts": {
