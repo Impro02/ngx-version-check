@@ -1,4 +1,4 @@
-The ngx-version-check service is an injectable Angular 8+ service for monitoring and notifying users of a new application version. The service exposes a boolean property (`NewVersionAvailable`) showing if a new version is available, or can accept a function to call to handle the actual notification.
+This project is a fork of ngx-version-check, which is an injectable Angular 8+ service for monitoring and notifying users of a new application version.
 
 ## Usage Instructions
 
@@ -10,7 +10,7 @@ In your angular.json file, add the library's assets folder to the assets array:
     "src/assets",
     {
         "glob": "**/*",
-        "input": "src/ngx-version-check/assets",
+        "input": "src/ngx-version-checker/assets",
         "output": "/"
     }
 ],
@@ -35,7 +35,7 @@ export class AppModule {}
 In the component you want to use for starting the service, inject the service in the constructor, and start it (with the configuration or with defaults) in the ngOnInit (or another) method:
 
 ```
-import { VersionCheckService } from 'ngx-version-check/service/version-check.service';
+import { VersionCheckService } from 'ngx-version-checker/service/version-check.service';
 ```
 
 ```
@@ -88,9 +88,9 @@ In order for the version check service to function, a post build script needs to
 
 ```
 {
-    "name": "dream",
+    "name": "app",
     "scripts": {
-        "postbuild": "node src/ngx-version-check/build/post-build.js dream"
+        "postbuild": "node src/ngx-version-checker/build/post-build.js app"
     }
 },
 ```
