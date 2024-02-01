@@ -1,0 +1,19 @@
+{
+  "name": "ngx-version-checker",
+  "version": "1.0.0",
+  "description": "Check app version by build hash",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Impro02/ngx-version-check.git"
+  },
+  "author": "Maxime MARTIN",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Impro02/ngx-version-check/issues"
+  },
+  "homepage": "https://github.com/Impro02/ngx-version-check#readme"
+}
